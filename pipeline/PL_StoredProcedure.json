@@ -1,0 +1,68 @@
+{
+	"name": "PL_StoredProcedure",
+	"properties": {
+		"activities": [
+			{
+				"name": "SP_Customer",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[InsertCustomer]",
+					"storedProcedureParameters": {
+						"CustomerID": {
+							"value": "1",
+							"type": "Int32"
+						},
+						"FirstName": {
+							"value": "Maanasa",
+							"type": "String"
+						},
+						"LastName": {
+							"value": "M",
+							"type": "String"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_SP_SQLCustomers",
+					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "LKUP_SQL Table",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "DS_OnPrem_SQLTables",
+						"type": "DatasetReference"
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-07-14T14:05:47Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

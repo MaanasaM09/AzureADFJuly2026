@@ -1,0 +1,20 @@
+{
+	"name": "DS_SeparateCSVTransfer",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SeparateCSVTransfer",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "filterseparatecsvfile"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,35 @@
+{
+	"name": "PL_GetMetadata_SQLTable",
+	"properties": {
+		"activities": [
+			{
+				"name": "Get Metadata_SQLTable",
+				"type": "GetMetadata",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "DS_Lookup_SQLTable",
+						"type": "DatasetReference"
+					},
+					"fieldList": [
+						"structure"
+					]
+				}
+			}
+		],
+		"folder": {
+			"name": "Activities/GET METADATA"
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-07-14T14:05:47Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

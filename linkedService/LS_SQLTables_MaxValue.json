@@ -1,0 +1,22 @@
+{
+	"name": "LS_SQLTables_MaxValue",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "localhost\\SQLEXPRESS",
+			"database": "RetailDW_Dev",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "MaanasaSQL",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI0ZTBiOTg2MS1hZGZiLTQzNDgtYjc3Yy00ZjRkY2MwNTMzYmIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SelfHostedIR",
+			"type": "IntegrationRuntimeReference"
+		},
+		"description": "SelfHosted IR for On-Prem Server Parent"
+	}
+}

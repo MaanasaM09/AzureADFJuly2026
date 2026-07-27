@@ -1,0 +1,42 @@
+{
+	"name": "PL_SQL Table",
+	"properties": {
+		"activities": [
+			{
+				"name": "LKUP_SQL Table",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"sqlReaderQuery": {
+							"value": "Select CustomerID\n      ,FirstName\n      ,Email\n      ,City\n      ,Country\n\t  FROM dbo.DimCustomer",
+							"type": "Expression"
+						},
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "DS_Lookup_SQLTable",
+						"type": "DatasetReference"
+					},
+					"firstRowOnly": false
+				}
+			}
+		],
+		"folder": {
+			"name": "Activities/LOOKUP"
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-07-14T14:05:47Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,43 @@
+{
+	"name": "PL_Multiple Inputs",
+	"properties": {
+		"activities": [
+			{
+				"name": "Get Metadata_Multiple Inputs",
+				"type": "GetMetadata",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "DS_INPUT_MultipleBLOBCSV",
+						"type": "DatasetReference"
+					},
+					"fieldList": [
+						"contentMD5"
+					],
+					"storeSettings": {
+						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
+						"enablePartitionDiscovery": false
+					},
+					"formatSettings": {
+						"type": "DelimitedTextReadSettings"
+					}
+				}
+			}
+		],
+		"folder": {
+			"name": "Activities/GET METADATA"
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-07-14T14:05:47Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
