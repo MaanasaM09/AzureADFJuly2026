@@ -1,0 +1,135 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfdevmandy"
+		},
+		"ADLSGen2_SQL_PARQUET_accountKey": {
+			"value": ""
+		},
+		"DS_OUTPUT_Multiple_ADLSPARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_Filtered_CSVRow_accountKey": {
+			"value": ""
+		},
+		"LS_INPUT_BLOBCSV_connectionString": {
+			"value": ""
+		},
+		"LS_INPUT_BLOBTXT_connectionString": {
+			"value": ""
+		},
+		"LS_INPUT_Multiple_BLOBCSV_connectionString": {
+			"value": ""
+		},
+		"LS_Lookup_SQLTable_password": {
+			"value": ""
+		},
+		"LS_ONPrem_SQLServer_DW_password": {
+			"value": ""
+		},
+		"LS_OUTPUT_ADLSPARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_OUTPUT_ADLSTXT_accountKey": {
+			"value": ""
+		},
+		"LS_OnPrem_SQLTables_password": {
+			"value": ""
+		},
+		"LS_PL_SameInputFolder_accountKey": {
+			"value": ""
+		},
+		"LS_RESTAPI_OUTPUT_ADLSPARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_SP_SQLCustomers_password": {
+			"value": ""
+		},
+		"LS_SQLTables_MaxValue_password": {
+			"value": ""
+		},
+		"LS_SeparateCSVTransfer_accountKey": {
+			"value": ""
+		},
+		"ADLSGen2_SQL_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsonpremsqltoparquet.dfs.core.windows.net"
+		},
+		"DS_OUTPUT_Multiple_ADLSPARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevmandy.dfs.core.windows.net/"
+		},
+		"LS_Filtered_CSVRow_properties_typeProperties_url": {
+			"value": "https://adlsdevmandy.dfs.core.windows.net/"
+		},
+		"LS_INPUT_RESTAPI_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/5yDVOt/data"
+		},
+		"LS_Lookup_SQLTable_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"LS_Lookup_SQLTable_properties_typeProperties_database": {
+			"value": "RetailDW_Dev"
+		},
+		"LS_Lookup_SQLTable_properties_typeProperties_userName": {
+			"value": "MaanasaSQL"
+		},
+		"LS_ONPrem_SQLServer_DW_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"LS_ONPrem_SQLServer_DW_properties_typeProperties_database": {
+			"value": "RetailDW_Dev"
+		},
+		"LS_ONPrem_SQLServer_DW_properties_typeProperties_userName": {
+			"value": "MaanasaSQL"
+		},
+		"LS_OUTPUT_ADLSPARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevmandy.dfs.core.windows.net/"
+		},
+		"LS_OUTPUT_ADLSTXT_properties_typeProperties_url": {
+			"value": "https://adlsdevmandy.dfs.core.windows.net/"
+		},
+		"LS_OnPrem_SQLTables_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"LS_OnPrem_SQLTables_properties_typeProperties_database": {
+			"value": "RetailDW_Dev"
+		},
+		"LS_OnPrem_SQLTables_properties_typeProperties_userName": {
+			"value": "MaanasaSQL"
+		},
+		"LS_PL_SameInputFolder_properties_typeProperties_url": {
+			"value": "https://adlsdevmandy.dfs.core.windows.net/"
+		},
+		"LS_RESTAPI_OUTPUT_ADLSPARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevmandy.dfs.core.windows.net/"
+		},
+		"LS_SP_SQLCustomers_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"LS_SP_SQLCustomers_properties_typeProperties_database": {
+			"value": "VisionBoardMigration"
+		},
+		"LS_SP_SQLCustomers_properties_typeProperties_userName": {
+			"value": "MaanasaSQL"
+		},
+		"LS_SQLTables_MaxValue_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"LS_SQLTables_MaxValue_properties_typeProperties_database": {
+			"value": "RetailDW_Dev"
+		},
+		"LS_SQLTables_MaxValue_properties_typeProperties_userName": {
+			"value": "MaanasaSQL"
+		},
+		"LS_SeparateCSVTransfer_properties_typeProperties_url": {
+			"value": "https://adlsdevmandy.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
